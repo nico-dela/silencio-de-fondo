@@ -17,9 +17,7 @@ function createPostCard(post) {
   article.className = "post-card";
   article.innerHTML = `
     <h2><a href="${post.url}">${post.title}</a></h2>
-    <p class="meta">${new Date(post.date).toLocaleDateString()} · ${
-    post.readTime || "—"
-  } min</p>
+    <p class="meta">${new Date(post.date).toLocaleDateString()}
     <p>${post.excerpt}</p>
   `;
   return article;
