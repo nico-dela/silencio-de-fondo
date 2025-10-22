@@ -27,7 +27,7 @@ async function init() {
     return;
   }
 
-  document.title = `${post.title} — Mi Blog`;
+  document.title = `${post.title} — Silencio de fondo`;
 
   titleEl.textContent = post.title;
   metaEl.textContent = `${new Date(post.date).toLocaleDateString()}`;
