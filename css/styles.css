@@ -1,0 +1,75 @@
+:root {
+  --max-w: 1100px;
+  --accent: #0b74de;
+  --bg: #fff;
+  --text: #222;
+  --radius: 8px;
+  --gap: 1rem;
+  --container-padding: 1rem;
+  --font-title: "Source Serif Pro", serif;
+  --font-body: "Source Sans Pro", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: #222;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+/* Layout simple */
+.site-header,
+.site-footer {
+  padding: var(--gap);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.site-header h1 {
+  margin: 0;
+}
+#posts {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Card */
+.post-card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #fff, #fafafa);
+}
+.post-card h2 {
+  margin: 0.25rem 0;
+}
+.post-card p.meta {
+  font-size: 0.9rem;
+  color: gray;
+}
